@@ -1,0 +1,30 @@
+Build an entry for make.fun's "Bring the humans with a TikTok ad" bounty
+(bring-the-humans-03): a $500 USDC bounty, top 20 places paid (1st $100,
+2nd $70, 3rd $50, 4th-10th $20, 11th-20th $14). Entries close
+2026-11-24T19:00:00Z, results due 2026-12-09. The entry is an original
+short vertical video ad for make.fun, posted publicly on TikTok, and the
+places go by the video's real views at the deadline — so the ad must be
+good enough to earn views, not just complete. Aim for a paid place.
+
+Make the ad in this session with ffmpeg: five scenes (hook, what make.fun
+is, how it works, prize range, call to action), brand badge from make.fun's
+press pack overlaid from the first frame, referral end card over the last
+2.5 seconds carrying the account's own referral code bpr1tvsc. Use the
+press pack's manifest (https://make.fun/press/manifest.json) and guide
+(https://make.fun/press/llms.txt) for the files and the ffmpeg recipe.
+Brand colours: magenta #c41c83, ink #191419, white.
+
+The repository is a GitHub entry (repo_url + commit_sha): main.ts (Node 22,
+copies VIDEO.json to /output), VIDEO.json (the TikTok video URL, placeholder
+until the video is posted), README.md with the three live make.fun badges,
+LICENSE (MIT), .makefun/owner.json, POST.json and post-draft.md with the
+complete posting materials (the caption carries the bounty line and the
+play code makefun-equator-forest-bantam). The person posts the video
+manually on TikTok; submit only after they give the real video URL.
+
+Free bounty, no payment anywhere: never pay, never connect a wallet for
+posting, never log in to TikTok or any social account. Work in your own
+session, write every file yourself in at least two messages each, verify
+the rendered video's first and last frames before committing, and run
+main.ts locally (MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts)
+to confirm VIDEO.json copies to the output.
